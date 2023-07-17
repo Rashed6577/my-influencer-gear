@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* started header section */
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px;
+}
+.title{
+    color: #3a3a3a;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+nav ul li{
+    list-style: none;
+    color: #3a3a3a;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+nav ul, nav{
+    display: flex;
+    gap: 30px;
+}
+.icon{
+    width: 17px;
+    height: 17px;
+    margin-top: 31px;
+}
+.main-header{
+    display: flex;
+    gap: 130px;
+    align-items: center;
+    margin-left: 100px;
+}
+.text-title{
+    color: #3a3a3a;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.text-description{
+    color: #3a3a3a;
+    font-size: .85rem;
+    font-weight: 600;
+}
+.btn{
+    color: white;
+    background-color: #e02c6d;
+    display: inline-flex;
+    gap: 10px;
+    font-size: .85rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+}
+.svg{
+    margin-top: 3px;
+}
+.header-img{
+    background-image: url('../images/Circle\ design.svg');
+    margin-top: 20px;
+}
+.left-img{
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+}
+.sponsor{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 150px 100px;
+}
+/* end header section */
+
+
+
+@media screen and (max-width:576px) {
+    .header-top{
+        flex-direction: column;
+        margin: 20px 30px;
+    }
+    .title{
+        margin: auto;
+    }
+    nav{
+        margin-left: 20px;
+    }
+    nav ul, nav{
+        gap: 10px;
+    }
+    .main-header{
+        margin-left: 0;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .header-img{
+        background-size: cover;
+    }
+    .left-img{
+        width: 200px;
+        height: 200px;
+    }
+    .text-title{
+        font-size: 2rem;
+    }
+    .text-description, .btn{
+        font-size: .5rem;
+    }
+    .sponsor{
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 80px 30px;
+    }
+
+       
+}
