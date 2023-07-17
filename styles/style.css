@@ -77,6 +77,77 @@ nav ul, nav{
 /* end header section */
 
 
+/* main section */
+
+.main-title{
+    color: #3a3a3a;
+    font-size: 1.75rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 120px;
+}
+.card-contain{
+    width: 300px;
+    height: 420px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card-img{
+    width: 290px;
+    height: 240px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.card-title{
+    color: #18191f;
+    font-size: 1.5rem;
+    font-weight: 500px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+}
+.price{
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    padding: 5px;
+}
+.card-description{
+    color: #787885;
+    font-family: 'Inter', sans-serif;
+    font-size: .75rem;
+    font-weight: 700 ;
+    padding: 5px;
+}
+.see{
+    text-decoration: none;
+    color: #e02c6d;
+    font-size: .85rem;
+    font-weight: 700;
+    
+}
+main{
+    position: relative;
+}
+.see-more{
+    position: absolute;
+    right: 150px;
+    bottom: -70px;
+}
+.more{
+    margin-left: 5px;
+}
+
+
 
 @media screen and (max-width:576px) {
     .header-top{
@@ -87,7 +158,8 @@ nav ul, nav{
         margin: auto;
     }
     nav{
-        margin-left: 20px;
+        display: flex;
+        justify-content: center;
     }
     nav ul, nav{
         gap: 10px;
@@ -115,6 +187,10 @@ nav ul, nav{
         gap: 30px;
         margin: 80px 30px;
     }
-
-       
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .see-more{
+        right: 70px;
+    }
 }
