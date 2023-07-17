@@ -141,11 +141,34 @@ main{
 .see-more{
     position: absolute;
     right: 150px;
-    bottom: -70px;
+    bottom: 360px;
+    
 }
 .more{
     margin-left: 5px;
 }
+.feature{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.feature-title{
+    color: #0a0826;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.feature-description{
+    color: #6c6c6c;
+    font-size: .85rem;
+    font-weight: 700;
+}
+.feature-text .btn{
+    border-radius: 5px;
+}
+
 
 
 
@@ -192,5 +215,25 @@ main{
     }
     .see-more{
         right: 70px;
+        bottom: 520px;
+        
     }
+    .feature{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .feature-title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .feature-description{
+        font-size: .5rem;
+        text-align: center;
+    }
+    .feature-text .btn{
+        margin: 30px 170px 30px;
+    }
+    
 }
